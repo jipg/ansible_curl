@@ -1,0 +1,7 @@
+# Inventory Cludforms
+
+[local]
+localhost
+
+[cloudforms]
+10.8.119.201
