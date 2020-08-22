@@ -6,6 +6,7 @@
     - name: Curl to api
       shell: 'curl -k --user USER:PASSWD -i X GET -H "Accept: application/json" http://192.168.56.104/api/v2'
       register: towerapi2
+      delegate_to: localhost
     
     - name: Debug api tower
       debug:
