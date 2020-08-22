@@ -1,7 +1,7 @@
 ---
 # Main playbook to connect 
 
-- hosts: curl inventory
+- hosts: all
   tasks:
     - name: Curl to api
       shell: 'curl -k --user USER:PASSWD -i X GET -H "Accept: application/json" http://192.168.56.104/api/v2'
