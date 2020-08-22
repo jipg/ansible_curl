@@ -1,7 +1,7 @@
 # Inventory Cludforms
 
 [local]
-localhost
+192.168.56.104
 
 [cloudforms]
 10.8.119.201
