@@ -2,7 +2,7 @@
 # Main playbook to connect 
 
 - hosts: all
-  delegate_to: localhost
+  #delegate_to: localhost
   tasks:
     - name: Catch parameters 
       shell: "echo {{ nombre }}"
