@@ -4,13 +4,20 @@
 - hosts: all
   delegate_to: localhost
   tasks:
-    - name: Curl to api
-      shell: 'curl -k --user USER:PASSWD -i X GET -H "Accept: application/json" http://192.168.56.104/api/v2'
-      register: towerapi2
+    - name: Catch parameters 
+      shell: "echo {{ nombre }}"
+      register: parameters
+
+    - name: Debug catch parameters
+      debug:
+        msg: "{{ parameters.stoud }}"
+    # - name: Curl to api
+    #   shell: 'curl -k --user USER:PASSWD -i X GET -H "Accept: application/json" http://192.168.56.104/api/v2'
+    #   register: towerapi2
       
     
-    - name: Debug api tower
-      debug:
-        msg: "{{ towerapi2.stdout_lines }}"
+    # - name: Debug api tower
+    #   debug:
+    #     msg: "{{ towerapi2.stdout_lines }}"
 
 
